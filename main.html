@@ -10,7 +10,7 @@
 	<form method="post">
 
 		<label for="name">Nmae</label>
-		<input type="text" id="name" required>
+		<input type="text" id="name" name="name" minlength="3" maxlength="50" required>
 	
 		
 
@@ -23,7 +23,9 @@
 		
 
 			<label for="likeness">Likeness</label>
-		<input type="range" id="likeness" required>
+		<input type="range" id="likeness" name="likeness" min="1" max="100" required>
+
+		<button type="submit">Submit</button>
 		
 	</form>
 </body>
